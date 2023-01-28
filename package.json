@@ -6,7 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.ts?(x)": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown",
+      "tsc-files --noEmit"
+    ]
   },
   "dependencies": {
     "@next/font": "13.1.5",
@@ -19,5 +27,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
+    "tsc-files": "^1.1.3"
   }
 }

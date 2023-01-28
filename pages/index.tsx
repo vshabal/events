@@ -1,9 +1,7 @@
+import { Layout } from "@/components/Shared/Layout";
+
 function HomePage() {
-  return (
-    <div>
-      <h1>The Home Page</h1>
-    </div>
-  );
+  return <Layout title="The Home Page" />;
 }
 
 export default HomePage;

@@ -1,9 +1,7 @@
+import { Layout } from "@/components/Shared/Layout";
+
 function FilteredEventsPage() {
-  return (
-    <div>
-      <h1>Filtered events</h1>
-    </div>
-  );
+  return <Layout title="Filtered events" />;
 }
 
 export default FilteredEventsPage;

@@ -1,9 +1,7 @@
+import { Layout } from "@/components/Shared/Layout";
+
 function EventDetailPage() {
-  return (
-    <div>
-      <h1>Event detail page</h1>
-    </div>
-  );
+  return <Layout title="Event detail page" />;
 }
 
 export default EventDetailPage;

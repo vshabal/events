@@ -1,7 +1,7 @@
-import { Layout } from "@/components/Shared/Layout";
+import FilteredEvents from "@/components/FilteredEvents";
 
 function FilteredEventsPage() {
-  return <Layout title="Filtered events" />;
+  return <FilteredEvents />;
 }
 
 export default FilteredEventsPage;

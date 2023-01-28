@@ -1,7 +1,7 @@
-import { Layout } from "@/components/Shared/Layout";
+import Events from "@/components/Events";
 
 function EventsPage() {
-  return <Layout title="All Events" />;
+  return <Events />;
 }
 
 export default EventsPage;

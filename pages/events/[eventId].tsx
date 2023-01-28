@@ -1,7 +1,7 @@
-import { Layout } from "@/components/Shared/Layout";
+import EventDetail from "@/components/EventDetail";
 
 function EventDetailPage() {
-  return <Layout title="Event detail page" />;
+  return <EventDetail />;
 }
 
 export default EventDetailPage;

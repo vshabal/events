@@ -1,6 +1,7 @@
 import LinkButton from "@/components/Shared/LinkButton";
 import { EventType } from "@/types/event";
 import Image from "next/image";
+import EventTitle from "./EventTitle";
 import classes from "./index.module.css";
 
 type Props = {
@@ -15,7 +16,7 @@ function Event({ event }: Props) {
       <Image src={event.image} alt={event.location} width="320" height="240" />
       <div className={classes.content}>
         <div className={classes.summary}>
-          <h2>{event.title}</h2>
+          <EventTitle>{event.title}</EventTitle>
           <div className={classes.dateContainer}>
             <time>{date}</time>
           </div>

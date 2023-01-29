@@ -1,0 +1,9 @@
+.title {
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .title {
+    margin: 1rem 0;
+  }
+}

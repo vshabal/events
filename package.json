@@ -13,7 +13,7 @@
     "**/*.ts?(x)": [
       "eslint --fix",
       "prettier --write --ignore-unknown",
-      "tsc-files --noEmit"
+      "bash -c tsc --noEmit"
     ]
   },
   "dependencies": {
@@ -31,7 +31,6 @@
   "devDependencies": {
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
-    "prettier": "^2.8.3",
-    "tsc-files": "^1.1.3"
+    "prettier": "^2.8.3"
   }
 }

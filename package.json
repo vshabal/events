@@ -9,13 +9,6 @@
     "lint": "next lint",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "**/*.ts?(x)": [
-      "eslint --fix",
-      "prettier --write --ignore-unknown",
-      "bash -c tsc --noEmit"
-    ]
-  },
   "dependencies": {
     "@next/font": "13.1.5",
     "@types/node": "18.11.18",

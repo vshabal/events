@@ -4,7 +4,7 @@ const DUMMY_EVENTS = [
     title: "Programming for everyone",
     location: "Somerstreeet 25, 12345 San Somewhere",
     date: "2021-04-12",
-    image: "images/coding-event.jpg",
+    image: "/images/coding-event.jpg",
     isFeatured: false,
   },
   {
@@ -12,7 +12,7 @@ const DUMMY_EVENTS = [
     title: "Programming for somebody",
     location: "Somerstreeet 52, 54321 San Somewhere",
     date: "2021-04-12",
-    image: "images/coding-event-1.jpg",
+    image: "/images/coding-event-1.jpg",
     isFeatured: true,
   },
 ];

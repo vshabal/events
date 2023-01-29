@@ -1,14 +1,15 @@
 import { Layout } from "@/components/Shared/Layout";
-import { Event } from "@/types/event";
+import { EventType } from "@/types/event";
+import EventList from "./EventList";
 
 type Props = {
-  featuredEvents: Event[];
+  featuredEvents: EventType[];
 };
 
 function Home({ featuredEvents }: Props) {
   return (
     <Layout title="The Home Page">
-      <span>{JSON.stringify(featuredEvents)}</span>
+      <EventList events={featuredEvents} />
     </Layout>
   );
 }

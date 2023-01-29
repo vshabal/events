@@ -1,5 +1,6 @@
 import { EventType } from "@/types/event";
 import Event from "./Event";
+import classes from "./index.module.css";
 
 type Props = {
   events: EventType[];
@@ -7,7 +8,7 @@ type Props = {
 
 function EventList({ events }: Props) {
   return (
-    <ul>
+    <ul className={classes.list}>
       {events.map((event) => (
         <Event key={event.id} event={event} />
       ))}

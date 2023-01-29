@@ -1,6 +1,6 @@
+import LinkButton from "@/components/Shared/LinkButton";
 import { EventType } from "@/types/event";
 import Image from "next/image";
-import Link from "next/link";
 import classes from "./index.module.css";
 
 type Props = {
@@ -24,7 +24,7 @@ function Event({ event }: Props) {
           </div>
         </div>
         <div className={classes.actionsContainer}>
-          <Link href={`/events/${event.id}`}>Explore Event</Link>
+          <LinkButton url={`/events/${event.id}`}>Explore Event</LinkButton>
         </div>
       </div>
     </li>

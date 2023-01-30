@@ -1,6 +1,6 @@
-import LinkButton from '@/components/Shared/LinkButton';
 import { EventType } from '@/types/event';
 import Image from 'next/image';
+import EventButton from './EventButton';
 import EventContent from './EventContent';
 import EventDate from './EventDate';
 import EventLocation from './EventLocation';
@@ -25,7 +25,7 @@ function Event({ event }: Props) {
             <EventLocation>{event.location}</EventLocation>
           </>
         }
-        actions={<LinkButton url={`/events/${event.id}`}>Explore Event</LinkButton>}
+        actions={<EventButton eventId={event.id} />}
       />
     </li>
   );

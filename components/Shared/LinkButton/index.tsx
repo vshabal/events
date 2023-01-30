@@ -2,7 +2,7 @@ import Link from 'next/link';
 import classes from './index.module.css';
 
 type Props = {
-  children: string;
+  children: string | JSX.Element;
   url: string;
 };
 

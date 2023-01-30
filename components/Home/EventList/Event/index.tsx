@@ -14,7 +14,7 @@ function Event({ event }: Props) {
   const date = new Date(event.date).toLocaleDateString('en-US');
 
   return (
-    <li className={classes.listItem}>
+    <li className={classes['list-item']}>
       <Image src={event.image} alt={event.location} width="320" height="240" />
       <div className={classes.content}>
         <div className={classes.summary}>
@@ -22,7 +22,7 @@ function Event({ event }: Props) {
           <EventDate>{date}</EventDate>
           <EventLocation>{event.location}</EventLocation>
         </div>
-        <div className={classes.actionsContainer}>
+        <div className={classes['actions-container']}>
           <LinkButton url={`/events/${event.id}`}>Explore Event</LinkButton>
         </div>
       </div>

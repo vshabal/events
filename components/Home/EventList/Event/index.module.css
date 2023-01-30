@@ -1,5 +1,5 @@
-.listItem {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px 12px 2px rgba(0, 0, 0, 0.2);
+.list-item {
+  box-shadow: 0 1px 4px rgb(0 0 0 / 30%), 0 1px 12px 2px rgb(0 0 0 / 20%);
   border-radius: 8px;
   overflow: hidden;
   background-color: white;
@@ -9,7 +9,7 @@
   gap: 1rem;
 }
 
-.listItem img {
+.list-item img {
   width: 100%;
   object-fit: cover;
   height: 10rem;
@@ -21,36 +21,34 @@
   text-align: center;
 }
 
-
-
-.addressContainer svg {
+.address-container svg {
   width: 1.25rem;
   height: 1.25rem;
-  color: #666666;
+  color: #666;
 }
 
 .content time {
-  color: #666666;
+  color: #666;
   font-weight: bold;
 }
 
 .content address {
   margin: 0.5rem 0;
-  color: #666666;
+  color: #666;
   white-space: pre;
 }
 
-.actionsContainer {
+.actions-container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
 
-.actionsContainer a {
+.actions-container a {
   display: block;
 }
 
-.actionsContainer a span {
+.actions-container a span {
   vertical-align: middle;
 }
 
@@ -67,11 +65,11 @@
 }
 
 @media (min-width: 768px) {
-  .listItem {
+  .list-item {
     flex-direction: row;
   }
 
-  .listItem img {
+  .list-item img {
     width: 40%;
     height: 14rem;
   }
@@ -86,7 +84,7 @@
     margin: 1rem 0;
   }
 
-  .actionsContainer {
+  .actions-container {
     flex-direction: row;
     justify-content: flex-end;
   }

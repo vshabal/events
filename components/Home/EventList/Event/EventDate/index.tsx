@@ -7,8 +7,8 @@ type Props = {
 
 function EventDate({ children }: Props) {
   return (
-    <div className={classes.dateContainer}>
-      <span className={classes.iconContainer}>
+    <div className={classes['date-container']}>
+      <span className={classes['icon-container']}>
         <DateIcon />
       </span>
       <time>{children}</time>

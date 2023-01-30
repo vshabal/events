@@ -15,31 +15,6 @@
   height: 10rem;
 }
 
-.content {
-  width: 100%;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.content time {
-  color: #666;
-  font-weight: bold;
-}
-
-.actions-container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-.actions-container a {
-  display: block;
-}
-
-.actions-container a span {
-  vertical-align: middle;
-}
-
 @media (min-width: 768px) {
   .list-item {
     flex-direction: row;
@@ -48,16 +23,5 @@
   .list-item img {
     width: 40%;
     height: 14rem;
-  }
-
-  .content {
-    width: 60%;
-    padding: 0;
-    text-align: left;
-  }
-
-  .actions-container {
-    flex-direction: row;
-    justify-content: flex-end;
   }
 }

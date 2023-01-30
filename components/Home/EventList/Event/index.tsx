@@ -1,6 +1,7 @@
 import LinkButton from '@/components/Shared/LinkButton';
 import { EventType } from '@/types/event';
 import Image from 'next/image';
+import EventContent from './EventContent';
 import EventDate from './EventDate';
 import EventLocation from './EventLocation';
 import EventTitle from './EventTitle';
@@ -16,16 +17,16 @@ function Event({ event }: Props) {
   return (
     <li className={classes['list-item']}>
       <Image src={event.image} alt={event.location} width="320" height="240" />
-      <div className={classes.content}>
-        <div className={classes.summary}>
-          <EventTitle>{event.title}</EventTitle>
-          <EventDate>{date}</EventDate>
-          <EventLocation>{event.location}</EventLocation>
-        </div>
-        <div className={classes['actions-container']}>
-          <LinkButton url={`/events/${event.id}`}>Explore Event</LinkButton>
-        </div>
-      </div>
+      <EventContent
+        summary={
+          <>
+            <EventTitle>{event.title}</EventTitle>
+            <EventDate>{date}</EventDate>
+            <EventLocation>{event.location}</EventLocation>
+          </>
+        }
+        actions={<LinkButton url={`/events/${event.id}`}>Explore Event</LinkButton>}
+      />
     </li>
   );
 }

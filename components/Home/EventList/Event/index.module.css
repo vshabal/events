@@ -21,18 +21,13 @@
   text-align: center;
 }
 
-.content h2 {
-  margin: 0.5rem 0;
-}
 
-.dateContainer,
 .addressContainer {
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
 
-.dateContainer svg,
 .addressContainer svg {
   width: 1.25rem;
   height: 1.25rem;

@@ -16,7 +16,7 @@ function Event({ event }: Props) {
 
   return (
     <li className={classes['list-item']}>
-      <Image src={event.image} alt={event.location} width="320" height="240" />
+      <Image className={classes['event-image']} src={event.image} alt={event.location} width="320" height="240" />
       <EventContent
         summary={
           <>

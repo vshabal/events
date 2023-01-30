@@ -9,10 +9,10 @@ type Props = {
 function EventButton({ eventId }: Props) {
   return (
     <LinkButton url={`/events/${eventId}`}>
-      <div className={classes.container}>
+      <span className={classes.container}>
         <span>Explore Event</span>
         <span className={classes['icon-container']}><RightArrowIcon /></span>
-      </div>
+      </span>
     </LinkButton>
   );
 }

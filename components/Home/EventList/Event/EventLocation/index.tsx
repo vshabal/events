@@ -6,7 +6,7 @@ type Props = {
 };
 
 function EventLocation({ children }: Props) {
-  console.log(Object.keys(classes))
+
   return (
     <div className={classes['location-container']}>
       <span className={classes['icon-container']}>

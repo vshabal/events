@@ -1,5 +1,5 @@
-import DateIcon from "./DateIcon";
-import classes from "./index.module.css";
+import DateIcon from './DateIcon';
+import classes from './index.module.css';
 
 type Props = {
   children: string;

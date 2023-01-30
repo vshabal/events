@@ -1,6 +1,6 @@
-import { EventType } from "@/types/event";
-import Event from "./Event";
-import classes from "./index.module.css";
+import { EventType } from '@/types/event';
+import Event from './Event';
+import classes from './index.module.css';
 
 type Props = {
   events: EventType[];

@@ -1,17 +1,17 @@
-import LinkButton from "@/components/Shared/LinkButton";
-import { EventType } from "@/types/event";
-import Image from "next/image";
-import EventDate from "./EventDate";
-import EventLocation from "./EventLocation";
-import EventTitle from "./EventTitle";
-import classes from "./index.module.css";
+import LinkButton from '@/components/Shared/LinkButton';
+import { EventType } from '@/types/event';
+import Image from 'next/image';
+import EventDate from './EventDate';
+import EventLocation from './EventLocation';
+import EventTitle from './EventTitle';
+import classes from './index.module.css';
 
 type Props = {
   event: EventType;
 };
 
 function Event({ event }: Props) {
-  const date = new Date(event.date).toLocaleDateString("en-US");
+  const date = new Date(event.date).toLocaleDateString('en-US');
 
   return (
     <li className={classes.listItem}>

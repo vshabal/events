@@ -1,5 +1,5 @@
-import classes from "./index.module.css";
-import LocationIcon from "./LocationIcon";
+import classes from './index.module.css';
+import LocationIcon from './LocationIcon';
 
 type Props = {
   children: string;

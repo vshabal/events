@@ -1,6 +1,6 @@
-import { Layout } from "@/components/Shared/Layout";
-import { EventType } from "@/types/event";
-import EventList from "./EventList";
+import { Layout } from '@/components/Shared/Layout';
+import { EventType } from '@/types/event';
+import EventList from './EventList';
 
 type Props = {
   featuredEvents: EventType[];

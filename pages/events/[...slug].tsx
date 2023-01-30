@@ -1,4 +1,4 @@
-import FilteredEvents from "@/components/FilteredEvents";
+import FilteredEvents from '@/components/FilteredEvents';
 
 function FilteredEventsPage() {
   return <FilteredEvents />;

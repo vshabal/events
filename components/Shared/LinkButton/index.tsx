@@ -1,5 +1,5 @@
-import Link from "next/link";
-import classes from "./index.module.css";
+import Link from 'next/link';
+import classes from './index.module.css';
 
 type Props = {
   children: string;

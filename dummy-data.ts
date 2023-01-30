@@ -1,18 +1,18 @@
 const DUMMY_EVENTS = [
   {
-    id: "e1",
-    title: "Programming for everyone",
-    location: "Somerstreeet 25, 12345 San Somewhere",
-    date: "2021-04-12",
-    image: "/images/coding-event.jpg",
+    id: 'e1',
+    title: 'Programming for everyone',
+    location: 'Somerstreeet 25, 12345 San Somewhere',
+    date: '2021-04-12',
+    image: '/images/coding-event.jpg',
     isFeatured: false,
   },
   {
-    id: "e2",
-    title: "Programming for somebody",
-    location: "Somerstreeet 52, 54321 San Somewhere",
-    date: "2021-04-12",
-    image: "/images/coding-event-1.jpg",
+    id: 'e2',
+    title: 'Programming for somebody',
+    location: 'Somerstreeet 52, 54321 San Somewhere',
+    date: '2021-04-12',
+    image: '/images/coding-event-1.jpg',
     isFeatured: true,
   },
 ];

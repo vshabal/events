@@ -1,5 +1,5 @@
-import Home from "@/components/Home";
-import { getFeaturedEvents } from "@/dummy-data";
+import Home from '@/components/Home';
+import { getFeaturedEvents } from '@/dummy-data';
 
 function HomePage() {
   const featuredEvents = getFeaturedEvents();

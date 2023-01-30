@@ -1,4 +1,4 @@
-import EventDetail from "@/components/EventDetail";
+import EventDetail from '@/components/EventDetail';
 
 function EventDetailPage() {
   return <EventDetail />;

@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Shared/Layout";
+import { Layout } from '@/components/Shared/Layout';
 
 function EventDetail() {
   return <Layout title="Event detail page" />;

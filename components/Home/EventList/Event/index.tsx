@@ -2,6 +2,7 @@ import LinkButton from "@/components/Shared/LinkButton";
 import { EventType } from "@/types/event";
 import Image from "next/image";
 import EventDate from "./EventDate";
+import EventLocation from "./EventLocation";
 import EventTitle from "./EventTitle";
 import classes from "./index.module.css";
 
@@ -19,9 +20,7 @@ function Event({ event }: Props) {
         <div className={classes.summary}>
           <EventTitle>{event.title}</EventTitle>
           <EventDate>{date}</EventDate>
-          <div className={classes.addressContainer}>
-            <address>{event.location}</address>
-          </div>
+          <EventLocation>{event.location}</EventLocation>
         </div>
         <div className={classes.actionsContainer}>
           <LinkButton url={`/events/${event.id}`}>Explore Event</LinkButton>

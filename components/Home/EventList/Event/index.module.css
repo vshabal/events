@@ -22,11 +22,6 @@
 }
 
 
-.addressContainer {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
 
 .addressContainer svg {
   width: 1.25rem;

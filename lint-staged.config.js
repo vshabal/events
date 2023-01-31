@@ -3,5 +3,6 @@ module.exports = {
     'eslint --fix',
     'prettier --write --ignore-unknown',
     () => 'tsc --noEmit'
-  ]
+  ],
+  '**/*.css': 'stylelint --fix'
 }

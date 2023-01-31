@@ -3,6 +3,7 @@
   "rules": {
     "eol-last": "error",
     "no-unused-vars": "error",
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "indent": ["error", 2]
   }
 }

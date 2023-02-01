@@ -5,12 +5,15 @@ const buildEslintCommand = (filenames) =>
     .map((f) => path.relative(process.cwd(), f))
     .join(' --file ')}`;
 const buildTypescriptCommand = () => 'tsc --noEmit';
-
+const prettierCommand = 'prettier --write --ignore-unknown';
 module.exports = {
   '**/*.ts?(x)': [
-    'prettier --write --ignore-unknown',
+    prettierCommand,
     buildEslintCommand,
     buildTypescriptCommand
   ],
-  '**/*.css': 'stylelint --fix'
+  '**/*.css': 'stylelint --fix',
+  '**/*.svg': [
+    prettierCommand,
+  ],
 }

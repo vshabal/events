@@ -1,4 +1,4 @@
-import DateIcon from './DateIcon';
+import CalendarIcon from '@/icons/calendar.svg';
 import classes from './index.module.css';
 
 type Props = {
@@ -8,9 +8,7 @@ type Props = {
 function EventDate({ children }: Props) {
   return (
     <div className={classes['date-container']}>
-      <span className={classes['icon-container']}>
-        <DateIcon />
-      </span>
+      <CalendarIcon className={classes.icon} />
       <time>{children}</time>
     </div>
   );

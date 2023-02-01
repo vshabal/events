@@ -4,9 +4,6 @@
   align-items: center;
 }
 
-.icon-container {
-  margin-left: 0.5rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+.icon {
+  height: 1.25rem;
 }

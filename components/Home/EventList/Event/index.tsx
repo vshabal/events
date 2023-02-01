@@ -15,8 +15,14 @@ function Event({ event }: Props) {
   const date = new Date(event.date).toLocaleDateString('en-US');
 
   return (
-    <li className={classes['list-item']}>
-      <Image className={classes['event-image']} src={event.image} alt={event.location} width="320" height="240" />
+    <li className={classes.container}>
+      <Image
+        className={classes.image}
+        src={event.image}
+        alt={event.location}
+        width="320"
+        height="240"
+      />
       <EventContent
         summary={
           <>

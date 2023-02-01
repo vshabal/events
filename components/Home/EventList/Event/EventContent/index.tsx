@@ -8,12 +8,8 @@ type Props = {
 function EventContent({ summary, actions }: Props) {
   return (
     <div className={classes.content}>
-      <div>
-        {summary}
-      </div>
-      <div className={classes['actions-container']}>
-        {actions}
-      </div>
+      <div>{summary}</div>
+      <div className={classes.actions}>{actions}</div>
     </div>
   );
 }

@@ -7,7 +7,7 @@ type Props = {
 
 function EventLocation({ children }: Props) {
   return (
-    <div className={classes['location-container']}>
+    <div className={classes.container}>
       <LocationIcon className={classes.icon} />
       <time>{children}</time>
     </div>

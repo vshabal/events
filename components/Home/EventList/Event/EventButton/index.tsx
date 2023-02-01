@@ -1,6 +1,6 @@
 import LinkButton from '@/components/Shared/LinkButton';
 import classes from './index.module.css';
-import RightArrowIcon from './RightArrowIcon';
+import RightArrowIcon from '@/icons/arrowRight.svg';
 
 type Props = {
   eventId: string;
@@ -11,7 +11,7 @@ function EventButton({ eventId }: Props) {
     <LinkButton url={`/events/${eventId}`}>
       <span className={classes.container}>
         <span>Explore Event</span>
-        <span className={classes['icon-container']}><RightArrowIcon /></span>
+        <RightArrowIcon className={classes.icon} />
       </span>
     </LinkButton>
   );

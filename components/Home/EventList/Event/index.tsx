@@ -2,8 +2,9 @@ import { EventType } from '@/types/event';
 import Image from 'next/image';
 import EventButton from './EventButton';
 import EventContent from './EventContent';
-import EventDate from './EventDate';
-import EventLocation from './EventLocation';
+import EventData from './EventData';
+import LocationIcon from '@/icons/location.svg';
+import CalendarIcon from '@/icons/calendar.svg';
 import EventTitle from './EventTitle';
 import classes from './index.module.css';
 
@@ -27,8 +28,12 @@ function Event({ event }: Props) {
         summary={
           <>
             <EventTitle>{event.title}</EventTitle>
-            <EventDate>{date}</EventDate>
-            <EventLocation>{event.location}</EventLocation>
+            <EventData icon={CalendarIcon}>
+              <time>{date}</time>
+            </EventData>
+            <EventData icon={LocationIcon}>
+              <address>{event.location}</address>
+            </EventData>
           </>
         }
         actions={<EventButton eventId={event.id} />}

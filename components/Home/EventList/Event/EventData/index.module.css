@@ -6,5 +6,10 @@
 
 .icon {
   height: 1.25rem;
+  flex-shrink: 0;
   color: #666;
+}
+
+.container + .container {
+  margin-top: 0.5rem;
 }

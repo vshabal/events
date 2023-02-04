@@ -4,7 +4,6 @@ import { Field, Form, Formik } from 'formik';
 import classes from './index.module.css';
 type Props = {
   values: EventSearchParams;
-  // eslint-disable-next-line no-unused-vars
   onSearch: (values: EventSearchParams) => void;
 };
 

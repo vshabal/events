@@ -1,7 +1,17 @@
+import ContentWrapper from './ContentWrapper';
+import Header from './Header';
+
 type Props = {
-  children?: JSX.Element;
+  children: JSX.Element;
 };
 
-export function Layout({ children }: Props) {
-  return <div>{children ? children : null}</div>;
+function Layout({ children }: Props) {
+  return (
+    <>
+      <Header />
+      <ContentWrapper>{children}</ContentWrapper>
+    </>
+  );
 }
+
+export default Layout;

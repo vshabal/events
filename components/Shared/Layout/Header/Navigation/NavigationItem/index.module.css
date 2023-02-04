@@ -1,0 +1,11 @@
+.container {
+  text-decoration: none;
+  color: #74dacc;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    font-size: 1.5rem;
+  }
+}

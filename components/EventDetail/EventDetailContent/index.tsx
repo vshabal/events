@@ -10,7 +10,7 @@ type Props = {
 
 function EventDetailContent({ event }: Props) {
   return (
-    <Layout title="Event detail page">
+    <Layout>
       <EventContainer>
         <EventTitle>{event.title}</EventTitle>
         <EventLogistics event={event} />

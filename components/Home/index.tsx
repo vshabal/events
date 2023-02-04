@@ -8,7 +8,7 @@ type Props = {
 
 function Home({ featuredEvents }: Props) {
   return (
-    <Layout title="The Home Page">
+    <Layout>
       <EventList events={featuredEvents} />
     </Layout>
   );

@@ -1,7 +1,11 @@
 import { Layout } from '@/components/Shared/Layout';
 
 function FilteredEvents() {
-  return <Layout title="Filtered events" />;
+  return (
+    <Layout>
+      <div>Filtered events</div>
+    </Layout>
+  );
 }
 
 export default FilteredEvents;

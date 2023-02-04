@@ -1,5 +1,5 @@
 import { EventType } from '@/types/event';
-import EventList from './EventList';
+import EventList from '../Shared/EventList';
 
 type Props = {
   featuredEvents: EventType[];

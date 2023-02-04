@@ -5,19 +5,13 @@ import EventSearchForm from '../Shared/EventSearchForm';
 
 type Props = {
   events: EventType[];
+  onSearch: (searchParams: EventSearchParams) => void;
 };
 
-function Events({ events }: Props) {
-  const mockSearchParams = {
-    year: '',
-    month: ''
-  };
-  const mockOnSearch = (values: EventSearchParams) => {
-    console.log(values);
-  };
+function Events({ events, onSearch }: Props) {
   return (
     <>
-      <EventSearchForm onSearch={mockOnSearch} values={mockSearchParams} />
+      <EventSearchForm onSearch={onSearch} />
       <EventList events={events} />
     </>
   );

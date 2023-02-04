@@ -3,11 +3,16 @@ import { EventSearchParams } from '@/types/eventSearchForm';
 import { Field, Form, Formik } from 'formik';
 import classes from './index.module.css';
 type Props = {
-  values: EventSearchParams;
+  values?: EventSearchParams;
   onSearch: (values: EventSearchParams) => void;
 };
 
-function EventSearchForm({ values, onSearch }: Props) {
+const DEFAULT_VALUES = {
+  year: '',
+  month: ''
+};
+
+function EventSearchForm({ values = DEFAULT_VALUES, onSearch }: Props) {
   return (
     <Formik initialValues={values} onSubmit={onSearch}>
       {() => (

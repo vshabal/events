@@ -1,18 +1,17 @@
-import { Layout } from '@/components/Shared/Layout';
 import { EventType } from '@/types/event';
+import EventDetailContent from './EventDetailContent';
+import EventNotFound from './EventNotFound';
 
 type Props = {
   event?: EventType;
 };
 
 function EventDetail({ event }: Props) {
-  return (
-    <Layout title="Event detail page">
-      <div>
-        {event ? JSON.stringify(event) : 'Event was not found'}
-      </div>
-    </Layout>
-  );
+  if (!event) {
+    return <EventNotFound />;
+  }
+
+  return <EventDetailContent event={event} />;
 }
 
 export default EventDetail;

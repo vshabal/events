@@ -1,0 +1,17 @@
+.title {
+  width: 100%;
+  background-image: linear-gradient(to bottom left, #008b79, #1180a1);
+  margin: 0;
+  padding: 3rem 0 4rem;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 3px 10px rgb(0 0 0 / 50%);
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 5rem;
+    padding-bottom: 6rem;
+  }
+}

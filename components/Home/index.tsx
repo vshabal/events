@@ -1,4 +1,3 @@
-import { Layout } from '@/components/Shared/Layout';
 import { EventType } from '@/types/event';
 import EventList from './EventList';
 
@@ -7,11 +6,7 @@ type Props = {
 };
 
 function Home({ featuredEvents }: Props) {
-  return (
-    <Layout>
-      <EventList events={featuredEvents} />
-    </Layout>
-  );
+  return <EventList events={featuredEvents} />;
 }
 
 export default Home;

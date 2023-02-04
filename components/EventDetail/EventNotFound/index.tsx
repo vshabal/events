@@ -1,11 +1,5 @@
-import { Layout } from '@/components/Shared/Layout';
-
 function EventNotFound() {
-  return (
-    <Layout>
-      <div>Please check event ID</div>
-    </Layout>
-  );
+  return <div>Please check event ID</div>;
 }
 
 export default EventNotFound;

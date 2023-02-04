@@ -1,4 +1,3 @@
-import { Layout } from '@/components/Shared/Layout';
 import { EventType } from '@/types/event';
 import EventContainer from '../EventContainer';
 import EventLogistics from '../EventLogistics';
@@ -10,12 +9,10 @@ type Props = {
 
 function EventDetailContent({ event }: Props) {
   return (
-    <Layout>
-      <EventContainer>
-        <EventTitle>{event.title}</EventTitle>
-        <EventLogistics event={event} />
-      </EventContainer>
-    </Layout>
+    <EventContainer>
+      <EventTitle>{event.title}</EventTitle>
+      <EventLogistics event={event} />
+    </EventContainer>
   );
 }
 

@@ -30,3 +30,15 @@ function getMonthUrlPart(eventSearchParams: EventSearchParams) {
 
   return EMPTY_URL_PART;
 }
+
+export function getEventSearchParamsFromSlug(slug: string[]) {
+  const yearSlug = slug[0];
+  const monthSlug = slug[1];
+  const isYearDefined = yearSlug && yearSlug !== YEAR_PARAM_PLACEHOLDER;
+  const defaultParamValue = '';
+
+  return {
+    year: isYearDefined ? yearSlug : defaultParamValue,
+    month: monthSlug ? monthSlug : defaultParamValue
+  };
+}

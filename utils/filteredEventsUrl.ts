@@ -1,14 +1,18 @@
 import { EventSearchParams } from '@/types/eventSearchForm';
 
 const YEAR_PARAM_PLACEHOLDER = 'any-year';
-const ROOT_URL_PART = '/events/archive';
+const ROOT_FILTERED_EVENTS_URL = '/events/archive';
+const NO_FILTERS_URL = '/events';
 const EMPTY_URL_PART = '';
 
 export function createFilteredEventsUrl(eventSearchParams: EventSearchParams) {
   const yearUrlPart = getYearUrlPart(eventSearchParams);
   const monthUrlPart = getMonthUrlPart(eventSearchParams);
+  if (yearUrlPart || monthUrlPart) {
+    return `${ROOT_FILTERED_EVENTS_URL}${yearUrlPart}${monthUrlPart}`;
+  }
 
-  return `${ROOT_URL_PART}${yearUrlPart}${monthUrlPart}`;
+  return NO_FILTERS_URL;
 }
 
 function getYearUrlPart(eventSearchParams: EventSearchParams) {
